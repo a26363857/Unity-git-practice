@@ -11,8 +11,11 @@ public class CSharpPracticeTests
     [TestCase(-10, 20, 10, Description = "負數與正數的相加")]
     public void Add_Two_number(int a, int b, int expected)
     {
+        //Arrange
         CsharpPractice csharpPractice = new CsharpPractice();
+        //Act
         int result = csharpPractice.Add(a, b);
+        //Assert
         Assert.AreEqual(expected, actual:result );
     }
     
